@@ -1,0 +1,24 @@
+<h1 style="color: brown;">Pipes</h1>
+
+<h2>{{string | uppercase}}</h2>
+<h2>{{string | lowercase}}</h2>
+<h2>{{string | titlecase}}</h2>
+<h2>{{Num | currency:'INR'}}</h2>
+<h2>{{num | number:'10.1-2'}}</h2>
+<h2>{{Num | percent}}</h2>
+<h2>{{student | json}}</h2>
+
+<input type="date" name="birthdate" [(ngModel)]="birthdate">
+<h2>{{birthdate | date}}</h2>
+<h2>{{birthdate | date:'short'}}</h2>
+<h2>{{birthdate | date:'full'}}</h2>
+<h2>{{birthdate | date:'long'}}</h2>
+<h2>{{birthdate | date:'dd/MM/yyyy'}}</h2>
+
+<h3>i18Select</h3>
+{{gender | i18nSelect:genderselect}} <br><br>
+
+Gender: <select name="Gender" [(ngModel)]="gender">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+</select>

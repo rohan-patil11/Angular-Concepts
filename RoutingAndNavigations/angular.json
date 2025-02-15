@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Task1": {
+    "RoutingAndNavigations": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/task1",
+            "outputPath": "dist/routing-and-navigations",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Task1:build:production"
+              "browserTarget": "RoutingAndNavigations:build:production"
             },
             "development": {
-              "browserTarget": "Task1:build:development"
+              "browserTarget": "RoutingAndNavigations:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Task1:build"
+            "browserTarget": "RoutingAndNavigations:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "178a3f4f-ba46-4ec4-b836-cbe0a122a605"
+    "analytics": "9369bc43-b3a0-475a-aa9a-d90e5563d8ba"
   }
 }

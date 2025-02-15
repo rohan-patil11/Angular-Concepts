@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Task1": {
+    "FormHandling": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/task1",
+            "outputPath": "dist/form-handling",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Task1:build:production"
+              "browserTarget": "FormHandling:build:production"
             },
             "development": {
-              "browserTarget": "Task1:build:development"
+              "browserTarget": "FormHandling:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Task1:build"
+            "browserTarget": "FormHandling:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "178a3f4f-ba46-4ec4-b836-cbe0a122a605"
+    "analytics": "e6bf9338-3bc1-4683-83cc-6700dbfc90a5"
   }
 }

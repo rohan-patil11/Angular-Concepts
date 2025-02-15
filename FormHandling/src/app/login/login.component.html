@@ -1,0 +1,16 @@
+
+<h1 style="color: brown;">Form Handling</h1>
+<h2>Way 1</h2>
+<form #loginform ="ngForm" (ngSubmit)="LogIn(loginform)">
+  Username: <input type="text" name="username" ngModel><br><br>
+  Password: <input type="text" name="password" ngModel><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<h2>Way 2</h2>
+
+<form (ngSubmit)="Loginn()">
+  Username: <input type="text" name="username" [(ngModel)]="username"><br><br>
+  Password: <input type="text" name="password" [(ngModel)]="password"><br><br>
+  <button type="submit">Submit</button>
+</form>
