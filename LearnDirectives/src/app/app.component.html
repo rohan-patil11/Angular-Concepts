@@ -1,0 +1,60 @@
+<body [ngClass]="{'highlight':ishighlighted}">
+  <h1 style="color: brown;">Directives In Angular</h1>
+<h1>Structural Directives</h1>
+
+<h2 style="color: blueviolet;">ngIf</h2>
+
+<button *ngIf="data">Sign in</button><br><br>
+
+<button *ngIf="!data">Sign Up</button>
+
+<h2 style="color: blueviolet;">ngFor</h2>
+//1
+<ul *ngFor="let i of numbers">
+  <li>{{i}}</li>
+</ul>
+
+//2
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+  <tbody *ngFor="let std of students">
+  <tr>
+    <td>{{std.id}}</td>
+    <td>{{std.name}}</td>
+  </tr>
+</tbody>
+</table>
+
+<h2 style="color: blueviolet;">Swith</h2>
+
+<div [ngSwitch]="color">
+
+<p *ngSwitchCase="'yellow'">Yellow color</p>
+<p *ngSwitchCase="'White'">White color</p>
+<p *ngSwitchDefault>default color</p>
+</div>
+
+<!-- <label for="options">Choose an option:</label>
+<select [ngSwitch]="options">
+    <option *ngSwitchCase="'option1'">do task 1</option>
+    <option *ngSwitchCase="'option2'">do task 2</option>
+    <option *ngSwitchDefault>do task 3</option>
+</select>  -->
+
+<h1>Attribute Directives</h1>
+
+<h2 style="color: blueviolet;">ngClass</h2>
+<!-- see on body tag for implementation -->
+<button (click)="Highlightonoff()">Highlight on/off</button>
+
+<h2 style="color: blueviolet;">ngClass</h2>
+<div [ngStyle]="{'font-size':fontsize}">
+  Hello lets study ng style
+  </div>
+  <button (click)="increase()">Increase</button><br>
+  <button (click)="decrease()">Decrease</button>
+
+</body>

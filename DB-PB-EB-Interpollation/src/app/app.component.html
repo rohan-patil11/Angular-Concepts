@@ -1,0 +1,30 @@
+<h1 style="color: brown;">Interpollation</h1>
+
+<h3>{{title}}  this is my title</h3>
+
+<h4>my obj {{obj}}</h4>
+
+<h5>my num value {{num}}</h5>
+
+<p>my array is {{arr}}</p>
+<p>{{isvalid}}</p>
+
+<h1 style="color: brown;">Proerty Binding</h1>
+
+<input type="username" value={{val1}} [disabled]=wanttodisable>
+
+<h1 style="color: brown;">Event Binding</h1>
+
+<button (click)="m1()">Click me</button>
+
+<div (mouseover)="mouseOver()">
+    <p>
+        dxfcjgkhgfdsfgx
+    </p>
+</div>
+
+<h1 style="color: brown;">Two way data Binding</h1>
+
+<input type="text" [(ngModel)]="myval">
+
+<p>{{myval}}</p>
