@@ -1,0 +1,40 @@
+<button (click)="getAllBooks()">Get All Books</button>
+<button (click)="getAllPosts()">GetAllPosts</button>
+
+<h4>Books</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Book Id</th>
+      <th scope="col">Book Price</th>
+      <th scope="col">Book Name</th>
+      <th scope="col">Author Name</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let book of data">
+    <tr>
+      <th scope="row">{{ book.bookId }}</th>
+      <td>{{ book.bookPrice }}</td>
+      <td>{{ book.bookName }}</td>
+      <td>{{ book.authorName }}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2>List of Posts</h2>
+
+<table style="border: solid;">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+  </tr>
+  <tbody *ngFor="let i of posts">
+    <tr>
+      <td>{{i.id}}</td>
+      <td>{{i.title}}</td>
+    </tr>
+  </tbody>
+</table>
+
